@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.lambdaapps.applock"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 2
+        versionName "1.2.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.github.AmniX:MaterialPatternllockView:7a45dcaa79'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.balysv:material-ripple:1.0.2'
+    compile 'com.scottyab:aescrypt:0.0.1'
+    compile 'com.github.ajalt.reprint:core:2.8.0@aar'
+    compile 'com.google.firebase:firebase-core:9.4.0'
+    compile 'com.github.ajalt.reprint:reprint_spass:2.8.0@aar'
+    compile 'com.github.ajalt.reprint:reactive:2.8.0@aar'
+    compile 'me.zhanghai.android.materialprogressbar:library:1.1.7'
+    compile 'com.google.firebase:firebase-analytics:9.4.0'
+    compile 'com.google.android.gms:play-services-ads:9.4.0'
+    compile 'com.android.support:cardview-v7:24.2.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.startapp:inapp-sdk:3.6.9'
+    compile(name:'unity-ads', ext:'aar')
+}
+apply plugin: 'com.google.gms.google-services'

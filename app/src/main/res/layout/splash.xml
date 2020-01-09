@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple">
+
+    <Button
+        android:id="@+id/start_now"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:background="@color/purple"
+        android:text="NEXT"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/appIconSplash"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/slogan"
+        android:layout_marginTop="44dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        android:textStyle="bold|italic"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appIconSplash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="APP LOCKER"
+        android:textColor="#FFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+</RelativeLayout>
